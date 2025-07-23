@@ -56,4 +56,4 @@ For questions, collaboration, or permission requests, contact:
 
 ## Stay Connected
 
-- Join our [Discord server](#) *(invite link coming soon)* to get updates and support.
+- Join our [Discord server](https://discord.gg/5D8MEFZute) to get updates and support.
