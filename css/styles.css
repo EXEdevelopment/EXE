@@ -1,99 +1,128 @@
-/* General reset and base */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
-  background-color: #f9f9f9;
 }
 
 body {
+  font-family: 'Inter', sans-serif;
+  background: #f4f7fc;
+  color: #333;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Header styles */
-header {
-  background-color: #111;
-  color: #fff;
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 1rem 2rem;
-  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #1e40af; /* deep blue */
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-top: 0.3rem;
 }
 
 nav a {
-  color: #ccc;
+  color: #cbd5e1;
   text-decoration: none;
-  margin: 0 0.8rem;
+  margin: 0 1rem;
   font-weight: 600;
   transition: color 0.3s ease;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
-  color: #0af;
+  color: #93c5fd;
 }
 
-/* Main content */
+/* Main */
 main {
-  flex: 1;
-  max-width: 900px;
+  flex-grow: 1;
+  padding: 3rem 1rem;
+  background: white;
   margin: 2rem auto;
-  padding: 0 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(30, 64, 175, 0.1);
+  width: 90%;
+  max-width: 960px;
 }
 
+/* Download Section */
 .download-section h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  color: #111;
+  text-align: center;
+  color: #1e40af;
 }
 
 .download-section p {
   margin-bottom: 2rem;
-  font-size: 1rem;
-  color: #444;
+  font-size: 1.1rem;
+  color: #475569;
+  text-align: center;
 }
 
-/* Download buttons container */
+/* Buttons container */
 .downloads {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
 }
 
-/* Download button style */
+/* Download buttons */
 .download-button {
-  background-color: #0af;
+  background-color: #1e40af;
   color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
   font-weight: 700;
-  font-size: 1rem;
-  box-shadow: 0 4px 8px rgba(10, 130, 255, 0.4);
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(30, 64, 175, 0.3);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   user-select: none;
+  min-width: 160px;
+  text-align: center;
 }
 
 .download-button:hover {
-  background-color: #0080ff;
-  box-shadow: 0 6px 12px rgba(0, 120, 255, 0.6);
+  background-color: #3b82f6;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5);
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem 0;
-  background-color: #111;
-  color: #ddd;
+  padding: 1.5rem 0;
+  background-color: #1e40af;
+  color: #cbd5e1;
   font-size: 0.9rem;
   margin-top: auto;
+  user-select: none;
 }
